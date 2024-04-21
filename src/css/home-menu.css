@@ -1,0 +1,108 @@
+/** MOBILE CSS */
+.slider-container {
+  width: 335px;
+  height: 228px;
+  margin-bottom: 40px;
+  overflow-y: hidden;
+  transition: width 0.3s ease, height 0.3s ease, padding 0.3s ease;
+}
+
+.slider-container ul {
+  list-style-type: none;
+  padding: 0;
+
+}
+
+.slider-container ul p {
+  cursor: pointer;
+
+}
+
+#category-list {
+  width: 335px;
+  height: 228px;
+  overflow-y: auto;
+  margin-top: 20px;
+
+}
+
+#category-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+#category-list::-webkit-scrollbar-thumb {
+  background: var(--all-categories-scroll-color);
+  border-radius: 12px;
+  height: 114px;
+}
+
+#title {
+  cursor: pointer;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--all-categories-title-and-hover);
+  transition: all 0.3s ease;
+}
+
+#category-list p {
+  cursor: pointer;
+  margin-bottom: 24px;
+  margin-right: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 112%;
+  letter-spacing: -0.02em;
+  color: var(--all-categories-list-text);
+  transition: all 0.3s ease;
+}
+
+#category-list p:hover {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--all-categories-title-and-hover);
+}
+
+/**=====  TABLET ===================================================================================  */
+@media screen and (min-width: 768px) {
+  .slider-container {
+    width: 337px;
+    height: 472px;
+    overflow-y: hidden;
+  }
+
+  #category-list {
+    width: 309px;
+    height: 472px;
+  }
+
+  #category-list::-webkit-scrollbar-thumb {
+    height: 167px;
+    /* Высота ползунка */
+  }
+
+  #title {
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 133%;
+  }
+
+  #category-list p {
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 133%;
+  }
+}
+
+/**=====  FULL-SCR ===================================================================================  */
+@media screen and (min-width: 1440px) {
+  #category-list {
+    width: 328px;
+  }
+}
