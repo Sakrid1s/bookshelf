@@ -1,7 +1,9 @@
-@import url(./theme-light-roots.css);
-@import url(./header.css);
-@import url(./home-books.css);
-@import url(./home-menu.css);
-@import url(./modal-window.css);
-@import url(./home-ukraine.css);
-@import url(./shopping-list.css);
+@import url('./fonts.css');
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./root.css');
+@import url('./theme-checkbox.css');
+@import url('./scrollUp.css');
+@import url('./loader.css');
+
+@import url('./header.css');
