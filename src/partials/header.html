@@ -1,0 +1,69 @@
+<header id="header" class="header"> 
+    <div class="header-container"> 
+        <a href="./index.html" class="header-logo-link" label="Logo"> 
+            <svg class="header-logo" width="24" height="24"> 
+                <use href="./img/symbol-defs.svg#icon-logo"></use> 
+            </svg>
+                <span> 
+                    <svg class="icon-Bookshelf" width="77" height="13.27">
+                        <use href="./img/symbol-defs.svg#icon-Bookshelf"></use> 
+                    </svg>
+                </span> 
+        </a>
+
+        <nav class="nav"> 
+            <ul class="list nav-list">
+                <li class="nav-item"> 
+                        <a class="nav-link-home current-page is-hidden" href="./index.html" label="Link to home page">HOME</a> 
+                </li>
+
+                <li class="nav-item"> 
+                    <a class="nav-link-shopping current-page is-hidden" href="./shopping-list.html" label="Link to Shopping list">SHOPPING LIST 
+                        <svg width="20" height="20"> 
+                            <use href="./img/symbol-defs.svg#icon-shopping-bag"></use>
+                        </svg>
+                    </a> 
+                </li> 
+            </ul> 
+        </nav>
+        
+        <div class="theme-switch-menu-btn">
+            <div class="container-switch-black">
+                <label id="switch" class="switch-black">
+                    <input type="checkbox" id="slider" />
+                        <span class="slider-black round"></span>
+                </label>
+            </div>
+
+            <div class="header-mob-menu-btn js-open-menu" id="menuToggle">    
+                <svg class="header-menu-icon burger-icon" width="28" height="28">
+                    <use class="icon-burger" href="./img/symbol-defs.svg#icon-burger" ></use>
+                </svg>
+        
+                <svg class="header-menu-icon close-icon hidden" width="28" height="28">
+                    <use class="icon-close" href="./img/symbol-defs.svg#icon-x" ></use>
+                </svg>
+            </div> 
+        </div>
+    </div>           
+</header>
+
+    <div class="container-modal-menu js-menu-container" id="mobile-menu">
+        <div class="header-modal-menu">
+            <ul class="header-modal-list">
+                <li class="header-modal-item">
+                    <a href="./index.html"
+                        class="header-modal-link header-modal-link-one-child">HOME
+                    </a>
+                </li>
+
+                <li class="header-modal-item">
+                    <a href="./shopping-list.html" class="header-modal-link header-modal-link-shopping">SHOPPING LIST
+                        <svg width="20" height="20"> 
+                            <use href="./img/symbol-defs.svg#icon-shopping-bag"></use>
+                        </svg>
+                    </a>
+                </li>                    
+            </ul>                  
+        </div>
+    </div>
