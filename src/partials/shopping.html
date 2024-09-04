@@ -1,0 +1,35 @@
+<section class="shopping">
+  <h2 class="shopping-title">Shopping <span>List</span></h2>
+  <div class="empty-page hidden">
+    <p class="text-shopping">
+      This page is empty, add some books and proceed to order.
+    </p>
+
+    <picture>
+      <source
+        srcset="
+          ./img/shopping-list/shopping-list-background-1x.png 1x,
+          ./img/shopping-list/shopping-list-background-2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./img/shopping-list/shopping-list-background-phone-1x.png 1x,
+          ./img/shopping-list/shopping-list-background-phone-2x.png 2x
+        "
+        media="(min-width:320px)"
+      />
+      <img
+        src="./img/shopping-list/shopping-list-background-phone-1x.png"
+        alt="books"
+      />
+    </picture>
+  </div>
+
+  <ul class="shopping-list">
+    <li class="loader-container"><span class="loader"></span></li>
+  </ul>
+
+  <div id="pagination-wrapper" class="tui-pagination"></div>
+</section>
