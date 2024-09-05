@@ -1,17 +1,19 @@
-const SHOPPING_LIST_KEY = 'list';
+import { fetchBookById } from './fetch-api';
 
-function addToShoppingList(book) {
-  const shopList = getAllBooks();
-  shopList.push(book);
-  localStorage.setItem(SHOPPING_LIST_KEY, JSON.stringify(shopList));
-}
+export const saveBookToLocalStorage = async bookId => {
+  try {
+    const bookData = await fetchBookById(bookId);
+    const shoppingList = JSON.parse(getBooksJson()) || [];
+    shoppingList.push(bookData);
+    localStorage.setItem('shoppinglist', JSON.stringify(shoppingList));
+  } catch (error) {
+    console.error(error);
+  }
+};
 
-function getAllBooks() {
-  return JSON.parse(localStorage.getItem(SHOPPING_LIST_KEY)) || [];
-}
-
-export const localStorageAPI = {
-  SHOPPING_LIST_KEY,
-  addToShoppingList,
-  getAllBooks,
+export const removeBookFromLocalStorage = async bookId => {
+  const booksJson = await getBooksJson();
+  const shoppinglist = JSON.parse(booksJson) || [];
+  const filteredList = shoppinglist.filter(item => item._id !== bookId);
+  await addBooksJson(JSON.stringify(filteredList));
 };
