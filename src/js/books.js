@@ -1,4 +1,5 @@
 import { fetchGeneral, fetchCategories, fetchCategory } from './fetch-api';
+import { popup } from './popup';
 import scrollToElement from 'scroll-to-element';
 
 const booksContainer = document.querySelector('.books-container');

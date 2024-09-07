@@ -5,8 +5,12 @@
 @import url('./theme-checkbox.css');
 @import url('./scrollUp.css');
 @import url('./loader.css');
+@import url('./pagination.css');
 
+@import url('./auth.css');
 @import url('./header.css');
-@import url('./support.css');
 @import url('./books.css');
 @import url('./categories.css');
+@import url('./support.css');
+@import url('./shopping.css');
+@import url('./popup.css');
