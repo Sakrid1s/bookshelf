@@ -15,10 +15,10 @@
     />
 
     
-    <script type="module" crossorigin src="/bookshelf/assets/vendor-f0250c50.js"></script>
-    <script type="module" crossorigin src="/bookshelf/assets/main-af1b159d.js"></script>
-    <link rel="stylesheet" href="/bookshelf/assets/vendor-412462ad.css">
-    <link rel="stylesheet" href="/bookshelf/assets/main-3e97f50f.css">
+    <script type="module" crossorigin src="/bookshelf/assets/vendor-04b8c1e0.js"></script>
+    <script type="module" crossorigin src="/bookshelf/assets/main-fcda5d95.js"></script>
+    <link rel="stylesheet" href="/bookshelf/assets/vendor-7512617c.css">
+    <link rel="stylesheet" href="/bookshelf/assets/main-d4bbc285.css">
   </head>
 
   <body data-page="home">
@@ -108,6 +108,103 @@
     </picture>
   </div>
 </header>
+
+      <div class="authentication">
+  <div class="authentication-body">
+    <button class="authentication-close" type="button">
+      <svg width="28" height="28" class="authentication-icon-close">
+        <use href="/bookshelf/assets/icons-f2d3a100.svg#icon-header-close"></use>
+      </svg>
+    </button>
+    <form class="authentication-form-signup">
+      <div class="authentication-errorcont"></div>
+      <div class="authentication-wrap">
+        <label class="authentication-label" for="name-up">
+          <input
+            type="text"
+            name="name"
+            id="name-up"
+            placeholder="name"
+            required
+          />
+        </label>
+        <label class="authentication-label" for="email-up">
+          <input
+            type="email"
+            name="email"
+            id="email-up"
+            placeholder="email"
+            required
+          />
+          <svg width="28" height="28" class="authorization-icon-email">
+            <use href="/bookshelf/assets/icons-f2d3a100.svg#icon-authorization-email"></use>
+          </svg>
+        </label>
+        <label class="authentication-label" for="password-up">
+          <input
+            type="password"
+            name="password"
+            id="password-up"
+            placeholder="password"
+            required
+          />
+          <svg width="28" height="28" class="authorization-icon-lock">
+            <use href="/bookshelf/assets/icons-f2d3a100.svg#icon-authorization-lock"></use>
+          </svg>
+        </label>
+      </div>
+      <button type="submit" class="authentication-button">
+        Sign up
+        <span class="btnloader"></span>
+      </button>
+    </form>
+
+    <form class="authentication-form-signin hide">
+      <div class="authentication-errorcont"></div>
+      <div class="authentication-wrap">
+        <label class="authentication-label" for="email-in">
+          <input
+            type="email"
+            name="email"
+            id="email-in"
+            placeholder="email"
+            required
+          />
+          <svg width="28" height="28" class="authorization-icon-email">
+            <use href="/bookshelf/assets/icons-f2d3a100.svg#icon-authorization-email"></use>
+          </svg>
+        </label>
+        <label class="authentication-label" for="password-in">
+          <input
+            type="password"
+            name="password"
+            id="password-in"
+            placeholder="password"
+            required
+          />
+          <svg width="28" height="28" class="authorization-icon-lock">
+            <use href="/bookshelf/assets/icons-f2d3a100.svg#icon-authorization-lock"></use>
+          </svg>
+        </label>
+      </div>
+      <button type="submit" class="authentication-button">
+        Sign in
+        <span class="btnloader"></span>
+      </button>
+    </form>
+
+    <ul class="authentication-list">
+      <li class="authentication-item">
+        <a class="authentication-signup" href="#">sign up</a>
+      </li>
+      <li class="authentication-item">
+        <a class="authentication-signin" href="#">sign in</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="authentication-blur"></div>
+</div>
 
 
       <main>
@@ -290,6 +387,10 @@
               <section class="books">
   <div class="books-container"></div>
 </section>
+
+              <div class="popup-backdrop">
+  <div class="popup-window"></div>
+</div>
 
             </div>
           </div>
